@@ -3,3 +3,7 @@ This is similar to PHP, Python, Java etc. Not many notes here!
 
 Classes contain data/functions
 i.e. House.rooms, House.paint()
+
+Inheritance and Polymorphism work here. Just like any other language, they inherit:
+Animal.legs, Dog.legs, Bird.wings
+
