@@ -9,5 +9,7 @@
 int main() {
     // :: = Scope resolution operator | cout = Character Output | << = Leftbound insertion operator | endl = End line
     std::cout << "Hello World!" << std::endl;
+
+    std::cout << std::endl << std::endl; // Put two blank lines
     return 0;
 }
