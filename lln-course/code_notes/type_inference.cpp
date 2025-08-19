@@ -1,6 +1,6 @@
 /*
  * Type inference
- * * A convenient way of creating variable with type that suits value assigned (like non-strict type PHP)
+ * * A convenient way of creating variable with type that suits value assigned (like non-strict type PHP) - It cannot be changed automatically after creation
  * * Must be initialized at declaration
  */
 
