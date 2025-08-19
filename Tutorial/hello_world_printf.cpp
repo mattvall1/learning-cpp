@@ -6,6 +6,6 @@ Second program
 #include <cstdio>
 
 int main() {
-    printf("Hello World!\n");
+    printf("Hello World!\n"); // Very widely used
     return 0;
 }
