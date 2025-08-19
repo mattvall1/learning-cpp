@@ -1,0 +1,22 @@
+Identifiers
+Valid characters:
+* Letters (a-z, A-Z)
+* Digits (0-9)
+* Underscores
+
+Identifiers cannot begin with a number
+player_img_1, playerImg1 - These are valid
+
+Must not match reserved words - just like any other language. I.e. int, float, char...
+C++ is case sensitive - but do not abuse this as likely will make mistakes!
+* x != X
+* var_name != VAR_NAME != Var_Name
+
+Generally keep variables less than 31 chars - for compatibility with old system
+Don't use non-Latin chars - should only use letters, numbers, underscores
+Try not to use underscores at the start of var names unless private variables etc
+
+
+
+
+
