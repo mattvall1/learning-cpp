@@ -14,11 +14,24 @@ int add_int(float a, double b, long double c) {
     return result;
 }
 
+// This is the actual solution, works the same way but it's C not C++ casting
+int add_int_solution(float a, double b, long double c) {
+    int result = 0;
+
+    result = (int) a + (int) b + (int) c;
+
+    return result;
+}
+
 int main() {
 
     int func_result = add_int(2.1, 3.9, 4.6);
 
-    std::cout << func_result << std::endl;
+    std::cout << func_result << std::endl << std::endl;
+
+    int func_result_s = add_int_solution(2.1, 3.9, 4.6);
+
+    std::cout << func_result_s << std::endl;
 
     return 0;
 }
