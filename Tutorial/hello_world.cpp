@@ -1,6 +1,6 @@
-//
-// First program
-//
+/*
+First program
+*/
 
 // Note: iostream (standard library), print text to screen, recieve from keyboard etc
 #include <iostream>
@@ -11,5 +11,5 @@ int main() {
     std::cout << "Hello World!" << std::endl;
 
     std::cout << std::endl << std::endl; // Put two blank lines
-    return 0;
+    return 0; // 0 indicates the program has executed successfully
 }
