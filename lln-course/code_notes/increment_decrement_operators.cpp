@@ -13,19 +13,19 @@ int main() {
     std::cout << "Initial Lives: " << player_lives << std::endl;
 
     // Postfix increment
-    int ps_postfix_increment = player_score++;
+    int ps_postfix_increment = player_score++; // Increases value by 1 AFTER current value is used
     printf("Postfix increment:  %d \n", ps_postfix_increment);
 
     // Prefix increment
-    int ps_prefix_increment = ++player_score;
+    int ps_prefix_increment = ++player_score; // x = x + 1
     printf("Prefix increment: %d \n", ps_prefix_increment);
 
     // Postfix decrement
-    int pl_postfix_decrement = player_lives--;
+    int pl_postfix_decrement = player_lives--; // Decreases value by 1 AFTER current value is used
     printf("Postfix decrement: %d \n", pl_postfix_decrement);
 
     // Prefix decrement
-    int pl_prefix_decrement = --player_lives;
+    int pl_prefix_decrement = --player_lives; // x = x - 1
     printf("Prefix decrement: %d \n", pl_prefix_decrement);
 
     return 0;
