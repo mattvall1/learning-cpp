@@ -6,7 +6,7 @@
 
 #include <iostream>
 
-int main() {
+int player_pos() {
     auto score = 9; // Int
     auto points = 19314858291984221; // Int over 32-bit
     auto height = 6.3f; // Float (f = constant specifier for floats)

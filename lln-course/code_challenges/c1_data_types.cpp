@@ -23,7 +23,7 @@ int add_int_solution(float a, double b, long double c) {
     return result;
 }
 
-int main() {
+int player_pos() {
 
     int func_result = add_int(2.1, 3.9, 4.6);
 
