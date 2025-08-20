@@ -2,7 +2,12 @@
  * Pre-processor directives
  * * Code is pre-processed prior to compiling
  * * Directives tell the pre-processor what to add/remove in code
- * *
+ *
+ * Constants as directives (such as 'MAX_AMMO' here) is discouraged
+ * * Considered bad practice
+ * * Macros don't have a context
+ * * No compiler enforcement of features like types and syntax correctness
+ * * IMPORTANT: Should use const on regular variables instead of these
  */
 
 // These are directives to insert code into the file
