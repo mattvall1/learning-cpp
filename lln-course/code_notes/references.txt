@@ -1,0 +1,15 @@
+References
+* Aliases to existing variables
+* Same syntax as references var
+* NOT POINTERS, OBJECTS, OR VARIABLES
+* Do not have an address
+  * No arrays of references - to index an element in an array, you need an address
+  * No pointers to references
+  * No references to references - Possible to write, but will both reference initial var
+
+Useful applications of references
+* Passing parameters by reference
+  * Modify variable sent as an argument within function
+  * Avoid copying large objects as function parameters
+    * Passing variables COPIES the data
+  * Same applies to 'for' loops
