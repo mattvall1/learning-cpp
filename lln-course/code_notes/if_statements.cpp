@@ -30,5 +30,8 @@ int main() {
     else
         printf("Game not paused.\n");
 
+    // In-line = Ternary
+    int one_two = !paused ? 1 : 2;
+
     return 0;
 }
