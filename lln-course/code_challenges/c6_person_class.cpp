@@ -16,16 +16,21 @@ public:
 
     void Eat(float calories) {
         energy += calories * 7.0 / 200.0;
+        if (energy > 100) energy = 100; // Energy cap
     }
 
     void Play(float minutes) {
         happiness += minutes / 2.0;
         energy -= minutes / 3.0;
+        if (happiness > 100) happiness = 100; // Happiness cap
+        if (energy < 0) energy = 0; // Energy cannot go below 0
     }
 
     void Sleep(float hours) {
         energy += hours * 3.75;
         health += hours * 2.5;
+        if (energy > 100) energy = 100;
+        if (health > 100) health = 100;
     }
 
     float GetEnergy() const {
