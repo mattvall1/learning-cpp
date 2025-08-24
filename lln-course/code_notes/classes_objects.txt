@@ -1,0 +1,25 @@
+Classes & Objects - Again most of this stuff is true of all languages so not many notes here
+* Class = blueprint for objects
+* Objects = Instances of a class
+* Classes have data + function members
+* Can be created on stack or heap
+* Functions and operators can be overloaded (+, -, [], ==)
+
+Data and function members
+* Data members hold object state
+* Function members define behaviour
+* Can be public, private, or protected
+* * Public = accessed from anywhere
+* * Private = accessible from class itself
+* * Protected = Same as private - can be accessed from derived classes
+* Encapsulation is key in classes - group objects state/behaviour while controling access
+
+Constructors/Destructors
+* Constructors initialize objects
+* Constructors can be overloaded
+* Destructors clean up resources like memory and file handles
+* * Important when objects are created on heap
+* Destructors are called automatically
+* Defining them is optional
+* * In most classes you would want to set up an initial state
+* * No need for destructor if nothing allocated on heap
