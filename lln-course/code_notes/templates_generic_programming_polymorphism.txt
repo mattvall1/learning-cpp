@@ -1,0 +1,11 @@
+Generic Programming
+* A paradigm where data types are not specified in the implementation of code, but rather in its use.
+
+
+Also known as Compile-Time Polymorphism
+* Specifying data types at variable definition, or object instantiation is in essence polymorphism resolved at compile time
+* Could be more efficient than runtime polymorphism because most calculations/adaptations happen once when app is being built
+
+
+Templates
+* Same idea as Word/PowerPoint templates
