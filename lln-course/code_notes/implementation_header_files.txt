@@ -1,0 +1,12 @@
+Implementation and header files
+* Header files contain
+* * Class definitions
+* * Function declarations
+* Implementation files
+* * Contain the executable code
+* * Must include header files+
+* External code should only include header files, NOT the implementation files
+* All implementation files MUST be compiled. They need to be included in either:
+* * Source files in command line
+* * 'Make' file
+* * IDE
