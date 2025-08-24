@@ -1,0 +1,20 @@
+The Standard Template Library (STL)
+* A set of template classes
+* Generic programming - Code written in type independent way
+* Included in C++ Standard Library
+* Enables efficient + reusable code
+
+Components of C++ STL
+1. Containers
+Array-like data structures storing collections of objects (i.e. Vectors, Stacks, Queues)
+
+2. Iterators
+Pointer-like objects allowing traversal of containers
+
+3. Algorithms
+Collection of algorithms for operations like search/sort/count/modify etc
+
+4. Functor (or Function objects)
+Function objects that can be parameterized in their constructors
+#include <functional>
+
