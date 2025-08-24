@@ -1,0 +1,64 @@
+Iterators
+Objects that enable us to traverse containers in order, for reading or writing
+* Iterators are defined as templates in C++
+* Pointers are a type of iterator
+* C++ STL iterator types
+* * Input
+* * Output
+* * Forward
+* * Bidirectional
+* * Random access
+
+Input iterator - Read one-way, one-pass
+* Only able to read
+* Only moves forward
+* Only one pass possible - if you try to traverse multiple times - different results will occour
+* Least requirements by STL
+* Suitable for input streams: keyboard buffers/read-only files
+
+Output iterator - Write one-way, one-pass
+* Only able to write - Same capabilities as input but used for writing
+* Only moves forward
+* Only supports one pass
+* Least requirements by STL
+* Suitable for output streams: screen text/write-only files
+
+Forward iterator - Read/Write one-way, multi-pass
+* Able to read and write (mutable)
+* Only moves forward
+* Supports multiple passes
+* Suitable for singly linked lists
+
+Bidirectional iterator - Read/Write two-way, multi-pass
+* Able to read and write (mutable)
+* Moves forward and backward
+* Supports multiple passes
+* Suitable for traversing doubly-linked lists
+
+Random Access iterator - Read/Write anywhere
+* Able to read and write (mutable)
+* Able to access any element by index
+* Supports multiple passes
+* Suitable for vectors, arrays
+
+STL iterators/containers summary table
++---------------+----------------------------------------------------------+
+| Iterator      | Containers                                               |
+|---------------+----------------------------------------------------------|
+| Forward       | forward_list, unordered_[multi]set, unordered_[multi]map |
+| Bidirectional | list, [multi]set, [multi]map                             |
+| Random access | vector, deque                                            |
++---------------+----------------------------------------------------------+
+
+Important iterator functions
+* begin() - Returns iterator to beginning of container
+* end() - Returns iterator to end of container (slot after end of container)
+* rbegin() - Returns reverse iterator to reverse beginning of container
+* rend() - Returns reverse end to reverse end of container (slot after beginning of container)
+
+
+
+
+
+
+
