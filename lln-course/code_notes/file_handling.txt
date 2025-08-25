@@ -1,0 +1,27 @@
+Working with files
+* <fstream> header
+* ifstream class for reading files
+* ofstream class for writing files
+* fstream class is for both read/write
+* Typical operations:
+* * Opening
+* * Reading
+* * Writing
+* * Closing
+
+Common operations:
+* is_open() - verify if file stream has correctly opened file
+* getline() - read a single line of a file into a string
+* << - write to a file, similar to printing to console (strings numbers, other data types)
+* File modes - specify how a file should be opened
+* * ios::app - append data to file
+* * ios::in - input, reading from file
+* * ios::out - output, writing to file
+* .close() - always close file when finished 
+
+
+
+
+
+
+
