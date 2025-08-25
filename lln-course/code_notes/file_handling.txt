@@ -17,7 +17,7 @@ Common operations:
 * * ios::app - append data to file
 * * ios::in - input, reading from file
 * * ios::out - output, writing to file
-* .close() - always close file when finished 
+* .close() - always close file when finished
 
 
 
