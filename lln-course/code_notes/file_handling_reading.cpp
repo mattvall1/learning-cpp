@@ -28,7 +28,7 @@ int main() {
     }
 
     // Processing the data
-    data_file.open("file_handling_data.txt");
+    data_file.open("file_handling_data_in.txt");
     if (data_file.fail()) {
         std::cout << std::endl << "File not found." << std::endl;
     } else {
