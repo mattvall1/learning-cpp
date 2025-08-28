@@ -10,13 +10,17 @@ std::string longest_common_prefix(std::vector<std::string>& strs) {
     if (strs.empty()) return "";
     if (strs.size() == 1) return strs[0];
 
+    // Sort alphabetically
     std::sort(strs.begin(), strs.end());
+    // Get first and last words
     const std::string& first = strs[0];
     const std::string& last = strs[strs.size() - 1];
 
     std::string result;
-    for (int i = 0; i < first.length() && i < last.length(); ++i) {
+    for (int i = 0; i < first.length() && i < last.length(); i++) {
+        // S if first letter of first word doesn't equal first letter of last word
         if (first[i] != last[i]) break;
+        // Add each correct letter
         result += first[i];
     }
 
@@ -25,25 +29,25 @@ std::string longest_common_prefix(std::vector<std::string>& strs) {
 
 int main() {
     std::vector<std::string> case_1 = {"flower","flow","flight"};
-    std::cout << longest_common_prefix(case_1);
+    std::cout << longest_common_prefix(case_1) << std::endl;
 
     std::vector<std::string> case_2 = {"dog","racecar","car"};
-    std::cout << longest_common_prefix(case_2);
+    std::cout << longest_common_prefix(case_2) << std::endl;
 
     std::vector<std::string> case_3 = {"cat","cats","cot"};
-    std::cout << longest_common_prefix(case_3);
+    std::cout << longest_common_prefix(case_3) << std::endl;
 
     std::vector<std::string> case_4 = {"", "b"};
-    std::cout << longest_common_prefix(case_4);
+    std::cout << longest_common_prefix(case_4) << std::endl;
 
     std::vector<std::string> case_5 = {"reflower","flow","flight"};
-    std::cout << longest_common_prefix(case_5);
+    std::cout << longest_common_prefix(case_5) << std::endl;
 
     std::vector<std::string> case_6 = {"flower","flower","flower","flower"};
-    std::cout << longest_common_prefix(case_6);
+    std::cout << longest_common_prefix(case_6) << std::endl;
 
     std::vector<std::string> case_7 = {};
-    std::cout << longest_common_prefix(case_7);
+    std::cout << longest_common_prefix(case_7) << std::endl;
 
     return 0;
 }
