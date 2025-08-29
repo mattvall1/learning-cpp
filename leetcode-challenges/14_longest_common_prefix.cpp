@@ -7,7 +7,9 @@
 #include <iostream>
 
 std::string longest_common_prefix(std::vector<std::string>& strs) {
+    // Immediately return if empty
     if (strs.empty()) return "";
+    // Always true if there's only one item
     if (strs.size() == 1) return strs[0];
 
     // Sort alphabetically
